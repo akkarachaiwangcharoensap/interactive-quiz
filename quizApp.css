@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+p,
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.answer {
+    padding: 1rem;
+    border: 1px solid #ececec;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #ececec;
+    transition: background 0.2s;
+}
+
+.answer.selected {
+    background: #dddddd;
+}
+
+.line {
+    height: 1px;
+    border-top: 1px solid #ececec;
+    display: block;
+}
+
+#question-section,
+#results-section {
+    margin-bottom: 20px;
+}
+
+#results-section,
+#prev-button,
+#submit-button,
+#restart-button {
+    display: none;
+}
+
+#correct-answers {
+    margin: 0;
+    padding: 0;
+}
+
+#correct-answers li {
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+
+    border: 1px solid #ececec;
+    list-style: none;
+}

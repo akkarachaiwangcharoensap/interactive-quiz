@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="./quizApp.css">
+</head>
+
+<body>
+    <section id="quiz-container">
+        <h1>Interactive Quiz</h1>
+
+        <span class="line"></span>
+
+        <section id="question-section">
+            <p id="question-text"></p>
+            <div id="answers-container"></div>
+        </section>
+
+        <section id="results-section">
+            <h2>Results</h2>
+            <p id="score"></p>
+            <ul id="correct-answers"></ul>
+        </section>
+
+        <button id="prev-button" onclick="prevQuestion()">Previous</button>
+        <button id="next-button" onclick="nextQuestion()">Next</button>
+        <button id="submit-button" onclick="submitQuiz()">Submit Quiz</button>
+        <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+    </section>
+
+    <script src="./quizLogic.js"></script>
+    <script>
+        // Initialize the quiz on page load
+        window.onload = initQuiz;
+    </script>
+</body>
+
+</html>
