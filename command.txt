@@ -1,0 +1,2 @@
+docker build -t interactive-app .
+docker run -p 8080:8080 interactive-app

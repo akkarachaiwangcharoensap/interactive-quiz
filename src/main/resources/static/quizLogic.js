@@ -50,6 +50,7 @@ function initQuiz()
 
 /**
  * Show the current questionaire.
+ * Get the quiz question object and build answers option list. 
  */
 function showQuestion()
 {
@@ -70,8 +71,6 @@ function showQuestion()
 
         answersContainer.appendChild(answerElement);
     });
-
-    highlightSelectedAnswer();
 }
 
 /**
