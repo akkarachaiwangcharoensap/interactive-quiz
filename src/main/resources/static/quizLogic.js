@@ -71,6 +71,9 @@ function showQuestion()
 
         answersContainer.appendChild(answerElement);
     });
+
+    // Highlight selected answer when going back.
+    highlightSelectedAnswer();
 }
 
 /**
